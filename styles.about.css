@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+  font-family:Arial, sans serif
+}
+
+.header {
+    position: relative; /* Position relative pour le positionnement de l'image et du texte */
+    height: 400px; /* Hauteur de l'en-tête */
+    overflow: hidden; /* Cache les débordements */
+}
+
+.header-image {
+    position: absolute; /* Positionnement absolu pour l'image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    object-fit: cover; /* Couvre l'espace sans déformer l'image */
+    z-index: 1; /* Assure que l'image est en dessous du texte */
+transition: transform 0.5s ease; /* Transition pour l'effet de zoom */
+}
+
+.header-image:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.header-text {
+    position: absolute; /* Positionnement absolu pour le texte */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste la position pour centrer le texte */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    z-index: 2; /* Assure que le texte est au-dessus de l'image */
+}
+
+.header-text h1 {
+    margin: 0; /* Supprime la marge par défaut */
+    font-size: 85px; /* Taille de la police pour le titre */
+    color:white; }
+
+.header-text p {
+    margin: 10px 0 0; /* Marge pour le paragraphe */
+    font-size: 25px; /* Taille de la police pour le paragraphe */
+
+}
+
+.navbar {
+    position: absolute; /* Positionnement absolu pour la navbar */
+    top: 0; /* Aligne la navbar en haut */
+    left: 0; /* Aligne la navbar à gauche */
+    width: 100%; /* Prend toute la largeur */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    z-index: 2; /* Assure que la navbar est au-dessus de l'image */
+}
+
+.navbar ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding */
+    margin: 0; /* Supprime la marge */
+    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.navbar li {
+    margin: 0 15px; /* Marge entre les éléments de la navbar */
+}
+
+.navbar a {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 10px 15px; /* Padding autour des liens */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Change la couleur de fond au survol */
+}
+body{
+  background-color:#f9f8f8;
+  font-family: Courier prime static;
+}
+h1 {
+    color: #7d5c4b; /* Couleur chocolat */
+  font-size:60px;
+    text-align: center;
+}
+p {
+  padding:3px;
+  margin:20px;
+  font-size: 18px;
+}
+
+footer{
+  padding:50px;
+  display:inline-block;
+  flex-wrap:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  margin-top:-30px;
+}
+
+.localisation{
+  display:inline-block;
+  flex-wrap:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  width: 267px;
+  height: 355px;
+  margin: 10px;
+  margin-top:-190px;
+  margin-left:700px
+  
+ 
+}
+.footer a {
+  text-decoration:none;
+  color:#8d5c2e ;/*couleur de lecriture*/
+  background-color:#fff7f0;/*la couleur de fond*/
+  border-radius:10px;/* pour les bordures du conteneur*/
+  padding:5px;/* qu'il y 'ait un petit peur d'espace à l'intérieur entre lecriture et les paroies*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/**/
+  padding-left: 5px;/* pour faire en sorte qu'elle soit un peu à l'intérieur*/
+}
+.localisation a {
+  text-decoration:none;
+  color:#b1845a ;/*couleur de lecriture*/
+  background-color:#fff7f0;/*la couleur de fond*/
+  border-radius:10px;/* pour les bordures du conteneur*/
+  padding:5px;/* qu'il y 'ait un petit peur d'espace à l'intérieur entre lecriture et les paroies*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/**/
+  padding-left: 5px;/* pour faire en sorte qu'elle soit un peu à l'intérieur*/
+}
+.locimage{
+  width:550px;
+  height:400px;
+}
+
+.copy{
+  margin-top:-300px;
+}

@@ -1,0 +1,382 @@
+.header {
+  position: relative; /* Position relative pour le positionnement de l'image et du texte */
+  height: 400px; /* Hauteur de l'en-tête */
+  overflow: hidden; /* Cache les débordements */
+}
+
+.header-image {
+  position: absolute; /* Positionnement absolu pour l'image */
+  top: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  height: 100%; /* Prend toute la hauteur */
+  object-fit: cover; /* Couvre l'espace sans déformer l'image */
+  z-index: 1; /* Assure que l'image est en dessous du texte */
+
+transition: transform 0.5s ease; /* Transition pour l'effet de zoom */
+}
+
+.header-image:hover {
+  transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.header-text {
+  position: absolute; /* Positionnement absolu pour le texte */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste la position pour centrer le texte */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centre le texte */
+  z-index: 2; /* Assure que le texte est au-dessus de l'image */
+}
+
+.header-text h1 {
+  margin: 0; /* Supprime la marge par défaut */
+  font-size: 85px /* Taille de la police pour le titre */
+}
+
+.header-text p {
+  margin: 10px 0 0; /* Marge pour le paragraphe */
+  font-size: 25px; /* Taille de la police pour le paragraphe */
+
+}
+
+.navbar {
+  position: absolute; /* Positionnement absolu pour la navbar */
+  top: 0; /* Aligne la navbar en haut */
+  left: 0; /* Aligne la navbar à gauche */
+  width: 100%; /* Prend toute la largeur */
+  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  z-index: 2; /* Assure que la navbar est au-dessus de l'image */
+}
+
+.navbar ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding */
+  margin: 0; /* Supprime la marge */
+  display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
+  justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.navbar li {
+  margin: 0 15px; /* Marge entre les éléments de la navbar */
+}
+
+.navbar a {
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  padding: 10px 15px; /* Padding autour des liens */
+  transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Change la couleur de fond au survol */
+}
+body{
+  Background-color:#f5f0f0;
+  font-family: Merriweather;/*à revoir peu-être*/
+  font-size:18px;
+  height: 100;
+  padding:0; /*Pour que la photo du header prend toute la largeur*/
+  margin:0;/*Pour que la photo du header prend toute la largeur*/
+}
+
+/* stylisme de la prtie intro*/
+.intro{
+  padding:50px;
+   margin-top:-10px;
+  margin-bottom: -50px;
+}
+/*style de premier div des photos de présentations*/
+.Levain{
+  display:flex;
+  justify-content: space-between;      
+}
+/*style des trois images dans le div*/
+.medium-image{
+  width: 360px;
+  height: 460px;
+  
+}
+.large-image{
+  width: 480px;
+  height:600px;
+}
+.small-image{
+  width:350px;
+  height:240px;
+  
+  
+}
+.Levain{
+   margin-top: -100px;
+   margin-bottom: -60px;
+   padding:50px;
+
+}
+
+
+
+/*style des gros titres de la page web*/
+.style{
+   font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: semi bold;
+}
+/*style de la 2nd partie de la page "le menu"*/
+.menu{
+  padding:50px;
+}
+
+/*style des 3 box du menu*/
+
+.container{
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 20px;
+}
+.box{
+  width: 350px;
+  height:230px;
+  border-radius: 7px;
+  background-color:#f0e2d5;
+  text-align: left;
+  box-sizing: border-box;
+  margin:50px;
+  margin-top:-30px;
+  padding-left:60px;
+}
+
+.box li{
+  list-style-type: none; /* Supprime les puces par défaut */
+  text-align: left;
+  padding:6px;/*espacement intérieur entre les éléments de la liste*/
+  text-align: left;/* aligner les éléments de la liste vers la gauche*/
+  margin-left:-60px; /* pour aligner les éléments de la liste vers la position à gauche souhaité*/
+  size:16px;
+}
+
+.box h4{
+  margin-bottom: -10px;
+}
+/* modification du style du 1ère élément de la liste*/
+.premier{
+  color:#ad7c4e;
+  font-style:italic;
+  font-weight: Bold;
+  font-size:17px;
+}
+/* style du conteneur des images du menu*/
+.conteneur{
+  display:flex;
+  justify-content:space-between;
+   margin-top:-80px;
+  padding:30px;
+}
+/* style de chaque div de l'image*/
+.imagec{
+   flex: 1; /* Chaque image prend une part égale de l'espace disponible */
+    margin: 0 20px;/*marge autour de chaque image*/
+  align-items: 
+}
+.imagec img{
+  width:350px;
+} /* les ids pour styliser chaque photo et l'aligner avec les conteneurs d'au dessus*/
+#croissant{
+  padding-left:65px;
+}
+#cookie{
+  padding-left:70px;
+}
+/* style de la dernière partie du menu*/
+.specialite{
+  background-color:#f0e2d5; /* la couleur du conteneur*/
+  margin:50px;/* pour un espacement intérieur*/
+  text-align:left;/* pour aligner le texte vers la gauche*/
+  margin-left:50px;/* pour pousser plus le texte vers la gauche*/
+  padding:10px;/* pour un espacement*/
+  margin-top:-10px;/*pour créer une petite marge d'espace entre le conteneur et son contenu*/
+}
+
+.specialite li{
+  list-style-type: none;/* pour enelever les points avant les éléments*/
+  padding:5px;/* un petit espace entre les éléments de la liste */
+}
+.lien-menu{
+  text-decoration:none;/* pour supprimer le soulignement au dessous de l'écriture*/
+  float:right;/* pour le positionner à droite dans le body*/
+  margin-top: -25px;/*espace intérieur côté haut*/
+  margin-right:100px;/* espace extérieur côté droit*/
+  color:#8d5c2e ;/*couleur de lecriture*/
+  background-color:#fff7f0;/*la couleur de fond*/
+  border-radius:10px;/* pour les bordures du conteneur*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/**/
+  cursor: pointer;/* quand le curseur arrive par dessus le texte le curseur change*/
+  opacity: 0.8;/*pour qu'il soint légérement transparent*/
+}
+/*Style de La partie recette commencent ici*/
+.conteneur-recette{
+  margin: 90px  50px 0 50px; /*pour l'espacement dans le body*/
+}
+/*style du lien toutes les recettes*/
+.link-recipie{
+  text-decoration:none;
+  color:#8d5c2e ;/*couleur de lecriture*/
+  background-color:#fff7f0;/*la couleur de fond*/
+  border-radius:10px;/* pour les bordures du conteneur*/
+  padding:5px;/* qu'il y 'ait un petit peur d'espace à l'intérieur entre lecriture et les paroies*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/**/
+  padding-left: 20px;/* pour faire en sorte qu'elle soit un peu à l'intérieur*/
+}
+/*style du trait séparant la box des recette de l'intro recette*/
+.trait {
+    border: none; /* Supprime la bordure par défaut */
+    height: 2px; /* Définit la hauteur de la ligne */
+    background-color: #e5d9cf; /* Change la couleur de la ligne */
+    margin: 0; /* Ajoute un espace au-dessus et en dessous */
+}
+/* début du style des box de recettes*/
+.recettebox{
+  display:inline-block;
+  flex-wrap:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  width:300px;
+  margin: 10px;
+  margin-top:0;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden; /* Prevent image from overflowing */ 
+}
+.imagederecette1{
+   width: 100%;
+  height:auto ;
+} /*Redimmensionner les images POUR UNE MEILLEURE QUALITE*/
+  .imagederecette2{
+    width: 100%;
+   height: 220px;
+}
+   .imagederecette3{
+    width: 100%;
+   height:220px ;
+}
+   .imagederecette4{
+    width: 100%;
+   height:220px ;
+}
+   .imagederecette5{
+    width: 100%;
+   height: 220px;
+}
+   .imagederecette6{
+    width: 100%;
+   height: 220px ;
+}
+   .imagederecette7{
+    width: 100%;
+   height: 220px;
+}
+
+.mimi{
+  padding:30px;
+  margin-left:45px;
+  margin-top: 0;  
+}
+.name{
+  margin-top:5px;
+  margin-left:20px;
+  font-size: 18px;
+}
+#lien{
+  text-decoration: none; /* Supprime le soulignement */
+  font-weight: bold; /* Mettre le texte en gras */
+  transition: color 0.3s ease; /* Effet de transition pour la couleur */
+  color:rgb(67, 36, 36);
+}
+#lien :hover {
+  color:rgb(153, 94, 94);
+  text-decoration:dotted;
+}
+.time{
+  font-size: 13px;
+  color: #777;
+  text-align:left;
+  padding-left:15px;
+  margin:-1px;
+}
+.mesure{
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-top: -10px;
+  margin-bottom: 2px;
+  padding-left:15px;
+  font-size: 15px;
+}
+.mesured{
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-top: -10px;
+  margin-bottom: 2px;
+  padding-left:15px;
+  font-size: 15px;
+}
+.mesurem{
+  padding: 3px 8px;
+  border-radius: 20px;
+  margin-top: -10px;
+  margin-bottom: 2px;
+  padding-left:15px;
+  font-size: 15px;
+}
+
+/* style FOOTER starts here*/
+
+footer{
+  padding:50px;
+  display:inline-block;
+  flex-wrap:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  margin-top:-30px;
+}
+
+.localisation{
+  display:inline-block;
+  flex-wrap:flex;
+  justify-content:space-between;
+  flex-direction:row;
+  width: 267px;
+  height: 355px;
+  margin: 10px;
+  margin-top:-190px;
+  margin-left:700px
+  
+ 
+}
+.footer a {
+  text-decoration:none;
+  color:#8d5c2e ;/*couleur de lecriture*/
+  background-color:#fff7f0;/*la couleur de fond*/
+  border-radius:10px;/* pour les bordures du conteneur*/
+  padding:5px;/* qu'il y 'ait un petit peur d'espace à l'intérieur entre lecriture et les paroies*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/**/
+  padding-left: 5px;/* pour faire en sorte qu'elle soit un peu à l'intérieur*/
+}
+.localisation a {
+  text-decoration:none;
+  color:#b1845a ;/*couleur de lecriture*/
+  background-color:#fff7f0;/*la couleur de fond*/
+  border-radius:10px;/* pour les bordures du conteneur*/
+  padding:5px;/* qu'il y 'ait un petit peur d'espace à l'intérieur entre lecriture et les paroies*/
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);/**/
+  padding-left: 5px;/* pour faire en sorte qu'elle soit un peu à l'intérieur*/
+}
+.locimage{
+  width:550px;
+  height:400px;
+}
+
+.copy{
+  margin-top:-300px;
+}

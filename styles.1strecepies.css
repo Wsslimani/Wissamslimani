@@ -1,0 +1,144 @@
+
+
+.header {
+  position: relative; /* Position relative pour le positionnement de l'image et du texte */
+  height: 400px; /* Hauteur de l'en-tête */
+  overflow: hidden; /* Cache les débordements */
+}
+
+.header-image {
+  position: absolute; /* Positionnement absolu pour l'image */
+  top: 0;
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  height: 100%; /* Prend toute la hauteur */
+  object-fit: cover; /* Couvre l'espace sans déformer l'image */
+  z-index: 1; /* Assure que l'image est en dessous du texte */
+
+transition: transform 0.5s ease; /* Transition pour l'effet de zoom */
+}
+
+.header-image:hover {
+  transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.header-text {
+  position: absolute; /* Positionnement absolu pour le texte */
+  top: 50%; /* Centre verticalement */
+  left: 50%; /* Centre horizontalement */
+  transform: translate(-50%, -50%); /* Ajuste la position pour centrer le texte */
+  color: white; /* Couleur du texte */
+  text-align: center; /* Centre le texte */
+  z-index: 2; /* Assure que le texte est au-dessus de l'image */
+}
+
+.header-text h1 {
+  margin: 0; /* Supprime la marge par défaut */
+  font-size: 85px /* Taille de la police pour le titre */
+}
+
+.header-text p {
+  margin: 10px 0 0; /* Marge pour le paragraphe */
+  font-size: 25px; /* Taille de la police pour le paragraphe */
+
+}
+
+.navbar {
+  position: absolute; /* Positionnement absolu pour la navbar */
+  top: 0; /* Aligne la navbar en haut */
+  left: 0; /* Aligne la navbar à gauche */
+  width: 100%; /* Prend toute la largeur */
+  background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+  z-index: 2; /* Assure que la navbar est au-dessus de l'image */
+}
+
+.navbar ul {
+  list-style-type: none; /* Supprime les puces */
+  padding: 0; /* Supprime le padding */
+  margin: 0; /* Supprime la marge */
+  display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
+  justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.navbar li {
+  margin: 0 15px; /* Marge entre les éléments de la navbar */
+}
+
+.navbar a {
+  color: white; /* Couleur du texte */
+  text-decoration: none; /* Supprime le soulignement */
+  padding: 10px 15px; /* Padding autour des liens */
+  transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.3); /* Change la couleur de fond au survol */
+}
+
+
+  body{
+    Background-color:#f5f0f0;
+    font-family: Merriweather;/*à revoir peu-être*/
+    font-size:18px;
+    height: 100;
+    padding:0; /*Pour que la photo du header prend toute la largeur*/
+    margin:0;/*Pour que la photo du header prend toute la largeur*/
+  }
+  .presentation{
+    padding:35px;
+    width:100%;
+    max-width:800px;
+    background-color:#efefef;
+    margin-left:20px;
+    margin-top:-10px;
+  }
+  h2{
+    margin-left:60px;
+  }
+  table{
+    margin-top:-20px;
+    margin-left:40px;
+    width:50%;
+    padding:10px;
+  }
+  tr, td{
+    padding:9px;
+    text-align: left;
+  }
+  /* STYLE DES BOX INGREDIENTS ET PROCESS*/
+  .section{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    max-width:950px;
+    padding-left:70px;
+    margin-top:-30px;
+  }
+  .ingredients{
+    Background-color:#dfdfdf;
+    padding:18px;
+    margin-right:120px;
+    padding-top:2px;
+    padding-left:20px;
+    margin-left:40px;
+    margin-top:40px;
+    width:70%;
+    height:100%;
+    
+  }
+  li{
+    padding:6px;
+    text-align:left;
+    padding-left:1px
+    
+  }
+  .preparation{
+   margin-left:10px;
+    width:90%;
+    height:100%;
+    padding-top:2px;
+   margin-top:30px;
+  }
+  .orderedlist{
+    text-align:left;
+  }

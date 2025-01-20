@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Boulangerie, pain Lelvain et patisserie">
+    <meta name="keywords" content="boulangerie, pain, recette">
+    <link rel="stylesheet" href="styles.contacte.css"> 
+    <title>Contactez-nous</title>
+    
+</head>
+
+
+
+
+<body>
+  <header class="header">
+    <nav class="navbar">
+        <ul>
+          <li> <a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À Propos</a></li>
+          <li><a href="contacte.html">Contactez-nous</a></li>
+        </ul>
+    </nav>
+    
+      <img src="Images/image_header.jpeg" alt="Image d'en-tête" class="header-image">
+      <div class="header-text">
+          <h1>Boulangerie Lelevain</h1>
+          <p>Un levain naturel, un savoir faire traditionnel et une croûte dorrée qui chante le bonheur</p>
+      </div>
+  </header>
+
+<!--1st section-->
+<div class="cords">
+  <h2>Contactez-nous</h2>
+  <p>Contactez-nous pour vos commandes spéciales, que ce soit pour des mariages, événements d'entreprise ou fêtes privées !</p>
+  <address>
+    <p> Retrouvez notre magasin au<a href="google.maps"> <strong class="s"> 66, Rue Marie curry, 75003, Paris </strong> </p></a>
+    <p>Appellez nous au<strong class="s"> N°:07 67 56 48 97</strong> entre <strong class="s">9h</strong> et <strong class="s">19h</strong> du <strong class="s">Lundi</strong> au <strong class="s">vendredi</strong>, sinon contactez-nous par mail</p>
+    <p> <a href="boulangerie.lelevain@gmail.com">Mail: Boulangerie.lelevain@gmail.com</a></p>
+    
+  </adress>
+ 
+</div>
+<!--Formular starts here-->
+<div class="formulaire">
+  <form action="soumettres" method="post"> <!-- cette balise créer et regroupe tous les éléments d'un formulaire-->
+    <label for="nom-et-prénom">Nom et prénom:</label>
+    <!--Cette balise est utilisée pour associer un texte descriptif à un champ de saisie. Cela améliore l'accessibilité et l'expérience utilisateur.-->
+    <input type="text" id="nom" name="nom" requiered>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" requiered>
+    <label for="N°detéléphone">N° de téléphone:</label>
+    <input for="N°detéléphone" id="N°detéléphone" name="N°detéléphone">
+    <label for="type-de-commande">Type de commande:</label>
+    <select id="type-de-commande" name="type-de-commande">
+      
+      <option value="Mariage">Mariage</option>
+      <option value="Événement">Événement</option>
+      <option value="Anniversaire">Anniversaire</option>
+      <option 
+value=" Autre">Autre</option>
+     </select>
+    
+     <label for="date">Date de l'évènement:</date>
+      <input type="date" id="date" name="date" requiered>
+    
+    
+    <label for="description">Description:</label>
+  <textarea id="description" name="description" row="50">
+
+  </textarea>
+  
+  <button type="submit">Envoyer</button>
+    <a href="Numérodetél">Appelez-nous maintenant</a> <!--stylisé pour devenir un bouton-->
+  </form>
+</div>
+<!--le formulaire ends here-->
+<!--3rd section FAQ-->
+<section >
+<div class="qst">
+  <div class="faq-container">
+    <h2>Questions fréquentes FAQ</h2>
+    <details><!--crée une section qui peut être développée ou réduite-->
+      <summary>Combien de temps à l'avance dois-je passer une commande?</summary><!-- est le titre cliquable qui permet d'ouvrir ou de fermer la section.
+-->
+      <div class="faq-answer">
+        <p>Nous recommandons de passer votre commande <strong><i>au moins 48 heures à l'avance pour les petites commandes</strong></i> afin de garantir la disponibilité de nos produits. Pour les commandes spéciales, comme des gâteaux personnalisés, des pièces montées ou des quantités importantes pour des mariages ou événements, il est préférable de <i><strong>nous contacter au moins 1 à 2 semaines à l'avance<strong></i>. Cela nous permet de nous assurer que nous pouvons répondre à vos besoins avec le plus grand soin.</p>
+      </div>
+    </details>
+    
+    
+    <details>
+      <summary>Quelle est la quantité minimale pour une commande événementielle ?</summary>
+        <div class="faq-answer">
+          <p>La quantité minimale pour <i>une commande événementielle dépend du type de produit.</i>
+             Pour des pâtisseries individuelles ou des viennoiseries,
+            <strong><i>nous demandons un minimum de 20 pièces.</i></strong> Pour les gâteaux personnalisés ou pièces montées, une commande est généralement requise pour au moins <i>15 portions</i>. Si vous avez des besoins spécifiques, n'hésitez pas à nous contacter pour discuter de vos exigences.</p>
+        </div>
+      
+    </details>
+        
+        
+        
+        <details>
+      <summary>Proposez-vous des options personnalisées (saveurs, design, etc.) ?
+</summary>
+        <div class="faq-answer">
+          <p>Oui, nous proposons des options personnalisées pour 
+            répondre à vos besoins spécifiques ! Que ce soit pour des gâteaux, pâtisseries ou autres créations,
+               nous<i> <strong> pouvons personnaliser les saveurs, les couleurs, 
+               les thèmes, et même le design</strong> selon vos préférences.</i> 
+               N'hésitez pas à nous communiquer vos idées ou à nous envoyer des exemples
+                pour que nous puissions créer quelque chose de vraiment unique pour votre événement.</p>
+        </div>
+      
+    </details>
+  </div>
+          <!--4th faq and social media--> 
+          
+          
+    <div class="qst-utile">
+           <h2>Informations sur les délais et conditions</h2> 
+      <details>
+        <summary>Conditions de livraison ou de retrait.</summary>
+        <div class="qst-answer">
+          <p><i>Nous proposons deux options pour récupérer vos commandes : </i></p>
+          <ol> 
+            <li>Retrait en boutique:
+            <ul>
+              <li>Vous pouvez récupérer vos commandes directement à la boulangerie pendant nos heures d'ouverture.</li>
+              <li>Un créneau horaire spécifique peut être convenu pour éviter tout délai.</li>
+            </ul>
+           </li>
+            
+            
+            
+            <li>Livraison :
+              <ul>
+                <li>Nous offrons un service de livraison pour les commandes importantes ou événementielles (gâteaux, pièces montées, etc.).</li>
+                <li>La livraison est disponible dans <strong><i>un rayon de 15 kilomètres autour de notre boulangerie.</i></strong></li>
+                <li>Des frais de livraison peuvent s'appliquer, en fonction de la distance et du montant de la commande.</li>
+              </ul>
+              
+              
+              
+              
+              
+            </li>
+          </ol>
+          
+          <p>Veuillez noter que les commandes doivent être réglées à l'avance pour garantir la livraison ou le retrait. Contactez-nous pour organiser votre commande et confirmer les détails !</p>
+        </div>
+        
+      </details>
+          
+      
+      <details>
+        <summary>Politique d'annulation ou de modification de commande.
+</summary>
+        <div class="qst-answer">
+          <p>Notre priorité est de garantir la satisfaction de nos clients, mais nous comprenons que des changements peuvent survenir. Voici notre politique :</p>
+          <ol>
+            <li>Annulation
+              <ul>
+                <li>Les commandes standardpeuvent être <strong>annulées jusqu'à 24 heures avant la date prévue de retrait ou de livraison.</strong></li>
+                <li>Pour les commandes personnalisées ou événementielles (gâteaux de mariage, grandes quantités, etc.),<strong> une annulation doit être effectuée au moins 72 heures à l'avance.</strong></li>
+                <li>Dans certains cas, des frais d'annulation peuvent s'appliquer si des ingrédients spécifiques ont déjà été achetés ou si le travail a commencé.</li>     
+              </ul> 
+            </li>
+         
+            
+            <li>Modification
+              <ul>
+                <li>Les modifications sur une commande (quantité, saveur, design, etc.) <strong>peuvent être apportées jusqu'à 48 heures avant la date prévue</strong>, sous réserve de faisabilité.</li>
+                <li>Pour les commandes événementielles, veuillez <strong>nous contacter au moins 5 jours à l'avance</strong> pour toute modification.</li>
+              </ul>
+            </li>
+          </ol>
+          
+          <p><strong><i>Merci de nous contacter dès que possible pour toute demande d'annulation ou de modification. Nous ferons de notre mieux pour répondre à vos besoins !</i></strong></p>
+        </div>
+      </details>
+          </div>
+          
+          
+          
+ </div>   
+</section>
+<!--Faq section ends here-->
+      
+      
+      
+<!--Footer starts here-->
+      
+      <footer>
+        <!--Mostly stickers -->
+       <a href="insta"> <p>Boulangerie-lelvain</p></a>
+        <a href="tiktok"> <p>Boulangerie Lelevain.tiktok</p></a>
+        <a href="e-mail"> <p>Boulangerie Lelevain.e-mail</p></a>
+        
+        <p class="copy">&copy; 2024 Mon Site Web. Tous droits réservés</p>
+      </footer>
+        
+  
+  </body>
+  </html>

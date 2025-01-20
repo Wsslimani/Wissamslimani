@@ -1,0 +1,215 @@
+body {
+    margin: 0;
+  font-family:Arial,
+}
+
+.header {
+    position: relative; /* Position relative pour le positionnement de l'image et du texte */
+    height: 400px; /* Hauteur de l'en-tête */
+    overflow: hidden; /* Cache les débordements */
+}
+
+.header-image {
+    position: absolute; /* Positionnement absolu pour l'image */
+    top: 0;
+    left: 0;
+    width: 100%; /* Prend toute la largeur */
+    height: 100%; /* Prend toute la hauteur */
+    object-fit: cover; /* Couvre l'espace sans déformer l'image */
+    z-index: 1; /* Assure que l'image est en dessous du texte */
+transition: transform 0.5s ease; /* Transition pour l'effet de zoom */
+}
+
+.header-image:hover {
+    transform: scale(1.1); /* Zoom sur l'image au survol */
+}
+
+.header-text {
+    position: absolute; /* Positionnement absolu pour le texte */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste la position pour centrer le texte */
+    color: white; /* Couleur du texte */
+    text-align: center; /* Centre le texte */
+    z-index: 2; /* Assure que le texte est au-dessus de l'image */
+}
+
+.header-text h1 {
+    margin: 0; /* Supprime la marge par défaut */
+    font-size: 85px /* Taille de la police pour le titre */
+}
+
+.header-text p {
+    margin: 10px 0 0; /* Marge pour le paragraphe */
+    font-size: 25px; /* Taille de la police pour le paragraphe */
+
+}
+
+.navbar {
+    position: absolute; /* Positionnement absolu pour la navbar */
+    top: 0; /* Aligne la navbar en haut */
+    left: 0; /* Aligne la navbar à gauche */
+    width: 100%; /* Prend toute la largeur */
+    background-color: rgba(0, 0, 0, 0.7); /* Fond semi-transparent */
+    z-index: 2; /* Assure que la navbar est au-dessus de l'image */
+}
+
+.navbar ul {
+    list-style-type: none; /* Supprime les puces */
+    padding: 0; /* Supprime le padding */
+    margin: 0; /* Supprime la marge */
+    display: flex; /* Utilise flexbox pour aligner les éléments horizontalement */
+    justify-content: center; /* Centre les éléments horizontalement */
+}
+
+.navbar li {
+    margin: 0 15px; /* Marge entre les éléments de la navbar */
+}
+
+.navbar a {
+    color: white; /* Couleur du texte */
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 10px 15px; /* Padding autour des liens */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.navbar a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Change la couleur de fond au survol */
+}
+
+
+/* Style of the 1st contact section*/
+.cords{
+    background-color:#ffffff;
+    margin:50px;
+    padding:10px;
+    border-radius:15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .cords h2{
+    text-align:center;
+    padding-right:140px;
+    font-size:40px;
+  }
+  .cords p {
+    padding-left:15px;
+    line-height: 1,6;
+    text-align: center;
+  }
+  .cords a{
+    text-decoration:none;
+    color:#542a1e;
+    font-weight: Bold;
+    font-size: 18px;
+  }
+  .s{
+    color:#542a1e;
+  }
+  
+  .formulaire {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff; /* Fond du formulaire */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left:280px
+  }
+  
+  /* Style des étiquettes */
+  label {
+    display: inline-block;
+    width: 150px; /* Largeur fixe pour aligner les labels */
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Style des champs de saisie */
+  input, select, textarea {
+    width: calc(100% - 160px); /* Largeur pour s'aligner aux labels */
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  #description{
+    width: 500px; /* Largeur alignée avec les autres champs */
+    height: 50px; /* Hauteur pour le rendre bien visible*/}
+  
+  /* Alignement des éléments dans une ligne */
+  .formulaire div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  /* Button style */
+  button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color:#fff ;
+    background-color: #900C3F; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #900C3F;
+  }
+  
+  /* Style du lien */
+  a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #900C3F;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .qst{
+     width: 100%;
+    max-width: 800px;
+    background-color: #ffffff; /* Fond du formulaire */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-left:170px;
+    margin-top:50px;
+  }
+  summary{
+    cursor: pointer; /* Indique que la question est cliquable */
+      background-color: #900C3F; /* Couleur de fond pour les questions */
+    color:#fff;
+      padding: 10px; /* Rembourrage interne */
+      border: 1px solid #b3d7ff; /* Bordure pour les questions */
+      border-radius: 5px; /* Coins arrondis */
+      transition: background-color 0.3s; /* Transition pour l'effet de survol */
+      font-weight: bold;
+    
+  }
+  .faq-answer p {
+    font-size:16px;
+    font-weight:normal;
+  }
+  .qst-answer p {
+    font-size:16px;
+  }
+  .qst-answer ol {
+    font-size:16px;
+    font-weight:normal;
+  }
+  .qst-answer li {
+    font-weight:normal;
+    font-size:  16px;
+  }
